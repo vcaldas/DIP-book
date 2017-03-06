@@ -20,10 +20,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Image-to-bynary.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Image-to-bynary.py">
+      <file leaf-file-name="Image-to-binary.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Image-to-binary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
+            <state relative-caret-position="484">
               <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="e#277#298#0" expanded="true" />
@@ -45,6 +45,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Image-to-bynary.py" />
+        <option value="$PROJECT_DIR$/Image-to-binary.py" />
       </list>
     </option>
   </component>
@@ -120,7 +121,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="coursera" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Image-to-bynary.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Image-to-binary.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -320,9 +321,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Image-to-bynary.py">
+    <entry file="file://$PROJECT_DIR$/Image-to-binary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
+        <state relative-caret-position="484">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="e#277#298#0" expanded="true" />

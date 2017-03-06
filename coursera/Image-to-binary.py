@@ -8,21 +8,19 @@
 from PIL import Image
 import time
 
+# Load original image and map pixels
 im = Image.open("image.tif")
 pixels = im.load();
 
 # ----- Start code using PIL -----
 start_time = time.time()
-
-print("Image size (width x height")
 width, height = im.size
 
 print(im.size)
-print(im.mode)
 
 #Create a new image
 img = Image.new(im.mode, im.size)
-pixelMap = img.load() # create the pixel map
+pixelMap = img.load()
 
 # Change this value to determine binary images
 threshold = 125
@@ -41,5 +39,9 @@ print("-Using PIL -- %s seconds ---" % (time.time() - start_time))
 
 
 # ----  End code using PIL -----
+
+
+### Using Scikit-image
+
 
 
