@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.vcaldas</groupId>
+  <artifactId>DIP_book</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Digital Image Processing</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <license.licenseName>MIT</license.licenseName>
+    <license.copyrightOwners>Victor Caldas</license.copyrightOwners>
+    <delete.other.versions>true</delete.other.versions>
+  </properties>
+  
+  	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+	
+  	<licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://choosealicense.com/licenses/mit/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    
+  	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>12.0.0</version>
+		<relativePath />
+	</parent>
+	
+	<developers>
+		<developer>
+			<id>vcaldas</id>
+			<name>Victor Caldas</name>
+			<url>https://imagej.net/User:[MY-IMAGEJ-WIKI-ACCOUNT]</url>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>None</name>
+		</contributor>
+	</contributors>
+	
+<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+		</dependency>
+	<dependency>
+    	<groupId>sc.fiji</groupId>
+    	<artifactId>fiji-lib</artifactId>
+	</dependency>
+
+  </dependencies>
+  <description>Jar containing the codes from the DIP Book by
+W. Burger and M. Burge.
+
+Following ImageJ2 standards</description>
+  <organization>
+  	<name>Victor Caldas</name>
+  	<url>victorcaldas.com</url>
+  </organization>
+  <inceptionYear>2017</inceptionYear>
+  <issueManagement>
+  	<url>https://github.com/vcaldas/Digital-Image-Processing/issues</url>
+  	<system>GitHub Issues</system>
+  </issueManagement>
+  <ciManagement>
+  	<system>None</system>
+  </ciManagement>
+  <scm>
+  	<url>https://github.com/vcaldas/Digital-Image-Processing.git</url>
+  	<developerConnection>scm:git:git@github.com:vcaldas/Digital-Image-Processing</developerConnection>
+  	<tag>HEAD</tag>
+  	<connection>scm:git:git://github.com/vcaldas/Digital-Image-Processing.git</connection>
+  </scm>
+</project>
