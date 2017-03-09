@@ -10,19 +10,23 @@ import ij.plugin.filter.PlugInFilter;
 import ij.process.ImageProcessor;
 
 
-public class MyInverter implements PlugInFilter {
+public class ReflectHorizontal implements PlugInFilter {
 
 	@Override
 	public void run(ImageProcessor ip) {
 			int w = ip.getWidth();
 			int h = ip.getHeight();
+			ImageProcessor ip2 = ip.duplicate();
 			
 			for (int u = 0; u < w; u++){
 				for (int v = 0; v < h; v++){
 					int p = ip.getPixel(u, v);
-					ip.putPixel(u, v, 255-p);
+					ip2.putPixel(w-u, v, p);
+					
 				}
 			}
+			ImagePlus reflected = new ImagePlus("Reflected Horizontal", ip2);
+			reflected.show();
 		
 	}
 
@@ -30,18 +34,17 @@ public class MyInverter implements PlugInFilter {
 	public int setup(String arg, ImagePlus imp) {
 		return DOES_8G; // just works on 8-bit image
 	}
-	
+
 	public static void main(String[] args) {
 		  new ImageJ();
-		    ClassLoader loader = MyInverter.class.getClassLoader();
+		    ClassLoader loader = ReflectHorizontal.class.getClassLoader();
 		    File file = new File(loader.getResource("images"+ File.separator + "clown8bit.tif").getFile());
 		    
 		    ImagePlus image = IJ.openImage(file.getAbsolutePath());
 		    
-		    IJ.runPlugIn(image, "chapter3.MyInverter", "parameter=Hello");
+		    IJ.runPlugIn(image, "chapter3.ReflectHorizontal", "parameter=Hello");
 		    
 		    image.show();
 		    WindowManager.addWindow(image.getWindow());
 	}
-
 }
